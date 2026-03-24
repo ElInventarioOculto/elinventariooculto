@@ -113,7 +113,6 @@
     }
   </style>
 
-  <!-- Importar model-viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
@@ -123,17 +122,14 @@
   </header>
 
   <section class="productos">
-    <!-- Producto 1 -->
     <div class="producto">
       <img src="portada1.png" alt="Producto 1">
       <h2>Doom X Atmega328P</h2>
       <p>Videojuego en Arduino Uno</p>
-      <p></p>
       <button class="btn-pdf" onclick="abrirModal('pdf1')">Ver informe del proyecto</button>
       <button class="btn-3d" onclick="abrirModal('model1')">Ver Modelo 3D del proyecto</button>
     </div>
 
-    <!-- Producto 2 -->
     <div class="producto">
       <img src="https://www.brawlstarsdicas.com.br/wp-content/uploads/2018/07/hipercarga-frank-brawl-stars-pancada-sismica-hypercharge-seismic-smash.png" alt="Producto 2">
       <h2>Hipercarga De Frank</h2>
@@ -143,7 +139,6 @@
       <button class="btn-3d" onclick="abrirModal('model2')">Ver Modelo 3D</button>
     </div>
 
-    <!-- Producto 3 -->
     <div class="producto">
       <img src="https://static.wikia.nocookie.net/brawlstars/images/7/78/HE-Bonnie1.png/revision/latest?cb=20220525145557&path-prefix=es" alt="Producto 3">
       <h2>Bonnie</h2>
@@ -154,12 +149,11 @@
     </div>
   </section>
 
-  <!-- Modales PDF -->
   <div id="pdf1" class="modal">
     <div class="modal-contenido">
       <span class="cerrar" onclick="cerrarModal('pdf1')">&times;</span>
       <h2>Doom mini</h2>
-      <iframe src="Doom x Arduino.pdf"></iframe>
+      <iframe src="DoomxArduino.pdf"></iframe>
     </div>
   </div>
 
@@ -179,7 +173,6 @@
     </div>
   </div>
 
-  <!-- Modales 3D -->
   <div id="model1" class="modal">
     <div class="modal-contenido">
       <span class="cerrar" onclick="cerrarModal('model1')">&times;</span>
@@ -208,7 +201,6 @@
     <p>&copy; El Inventario Oculto.</p>
   </footer>
 
-  <!-- Scripts -->
   <script>
     function abrirModal(id) {
       document.getElementById(id).style.display = "block";
